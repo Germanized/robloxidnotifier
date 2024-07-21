@@ -25,14 +25,14 @@ class RobloxMonitor(QMainWindow):
 
         self.timer = QTimer()
         self.timer.timeout.connect(self.check_statuses)
-        self.timer.start(10000)  # Check every 10 seconds
+        self.timer.start(10000)  # Check every 10 seconds changable
 
     def initUI(self):
         self.setWindowTitle('Roblox Item Monitor')
         self.setGeometry(100, 100, 600, 400)
-        self.setWindowFlags(Qt.FramelessWindowHint)  # Remove window frame for rounded corners
+        self.setWindowFlags(Qt.FramelessWindowHint)  
 
-        # Define the stylesheet for the dark theme and rounded corners
+
         self.setStyleSheet("""
             QMainWindow {
                 background-color: #2E2E2E;
